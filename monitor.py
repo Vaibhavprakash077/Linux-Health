@@ -1,4 +1,4 @@
-# Hostname feature branch
+# Linux Health Monitor - Feature Version
 import argparse
 import system_checks as s
 
