@@ -60,6 +60,22 @@ def check_disk():
     except subprocess.SubprocessError as e:
         logging.error(e)
 
+def check_cpu():
+    try:
+        result = subprocess.run(
+            ["uptime"],
+            capture_output=True,
+            text=True,
+            timeout=5,
+            check=True
+        )
+
+        logging.info(f"CPU Load : {result.stdout.strip()}")
+
+    except subprocess.SubprocessError as e:
+        logging.error(e)
+
+
 
 def check_hostname():
     try:
