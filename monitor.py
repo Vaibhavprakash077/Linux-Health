@@ -1,4 +1,5 @@
-# Linux Health Monitor - Production Version
+
+# Linux Health Monitor
 import argparse
 import system_checks as s
 
